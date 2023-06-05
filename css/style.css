@@ -26,7 +26,7 @@ body {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    flex-wrap: wrap;
 }
 
 .profile {
@@ -142,6 +142,10 @@ body {
     transform: rotate(45deg);
 }
 
+.heart:hover {
+    cursor: pointer;
+}
+
 .heart::before,
 .heart::after {
     content: "";
@@ -161,3 +165,5 @@ body {
 .heart::after {
     transform: translateY(-50%);
 }
+
+@media screen and (max-width: 50rem) {}
