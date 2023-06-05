@@ -28,9 +28,23 @@ body {
 
 .profile__header {
     height: 10rem;
-    background: red;
+    background: url("../img/pexels-anni-roenkae-2860804.webp");
+    background-size: 100% 100%;
+    background-size: cover;
     border-top-left-radius: 5rem;
     border-top-right-radius: 5rem;
+    position: relative;
+}
+
+.unknown {
+    height: 15rem;
+    width: 15rem;
+    background: red;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 50%;
 }
 
 .profile__body {
