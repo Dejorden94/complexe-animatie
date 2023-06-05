@@ -45,6 +45,29 @@ body {
     left: 50%;
     transform: translate(-50%, 50%);
     border-radius: 50%;
+    overflow: hidden;
+}
+
+.unknown__face {
+    width: 40%;
+    height: 40%;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.unknown__body {
+    width: 80%;
+    height: 80%;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .profile__body {
