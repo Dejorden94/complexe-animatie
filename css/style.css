@@ -24,8 +24,9 @@ body {
 .profile {
     width: 40rem;
     height: 40rem;
-    background: #eee;
+    background: white;
     border-radius: 5rem;
+    box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
 }
 
 .profile__header {
@@ -90,7 +91,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 5rem;
-    background: green;
     border-bottom-left-radius: 5rem;
     border-bottom-right-radius: 5rem;
 }
@@ -101,18 +101,25 @@ body {
     background: red;
     border: none;
     position: relative;
+    transform: rotate(45deg);
 }
 
-.heart::before {
+.heart::before,
+.heart::after {
     content: "";
     width: 100%;
     height: 100%;
-    background: blue;
+    background: red;
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 50%;
+}
+
+.heart::before {
+    transform: translateX(-50%);
 }
 
 .heart::after {
-    content: "";
+    transform: translateY(-50%);
 }
