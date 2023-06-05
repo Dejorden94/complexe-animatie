@@ -69,7 +69,8 @@ body {
     border-top-right-radius: 5rem;
 }
 
-.unknown {
+.unknown,
+.known {
     height: 15rem;
     width: 15rem;
     background: #eee;
@@ -102,6 +103,12 @@ body {
     top: 75%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.known__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .profile__body {
