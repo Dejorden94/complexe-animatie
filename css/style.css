@@ -121,9 +121,20 @@ body {
 .profile__body {
     display: flex;
     align-items: center;
-    height: 10rem;
+    height: calc(85% - 10rem);
     background: white;
     padding: 2rem;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+}
+
+
+.profile__footer {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
     border-bottom-left-radius: 5rem;
     border-bottom-right-radius: 5rem;
 }
@@ -132,16 +143,10 @@ body {
     opacity: 0;
     margin-top: 2rem;
     font-size: 80%;
-}
-
-.profile__footer {
-    height: 0rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5rem;
-    border-bottom-left-radius: 5rem;
-    border-bottom-right-radius: 5rem;
+    animation-name: popup;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
 }
 
 .heart {
@@ -152,6 +157,10 @@ body {
     border: none;
     position: relative;
     transform: rotate(45deg);
+    animation-name: popupHeart;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
 .heart:hover {
@@ -194,5 +203,29 @@ body {
     100% {
         height: 40rem;
         width: 40rem;
+    }
+}
+
+@keyframes popup {
+    from {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popupHeart {
+    from {
+        opacity: 0;
+        transform: translateY(2rem) rotate(45deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) rotate(45deg);
     }
 }
