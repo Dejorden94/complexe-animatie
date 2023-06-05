@@ -18,3 +18,29 @@ body {
     align-items: center;
     min-height: 100vh;
 }
+
+.profile {
+    width: 40rem;
+    height: 40rem;
+    background: #eee;
+    border-radius: 5rem;
+}
+
+.profile__header {
+    height: 10rem;
+    background: red;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+}
+
+.profile__body {
+    height: 25rem;
+    background: blue;
+}
+
+.profile__footer {
+    height: 5rem;
+    background: green;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+}
